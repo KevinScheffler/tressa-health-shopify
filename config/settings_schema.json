@@ -54,30 +54,94 @@
     ]
   },
   {
-    "name": "t:general.colors",
-    "settings": [
-      {
-        "type": "color",
-        "id": "background_color",
-        "default": "#FFFFFF",
-        "label": "t:labels.background"
-      },
-      {
-        "type": "color",
-        "id": "foreground_color",
-        "default": "#333333",
-        "label": "t:labels.foreground"
-      },
-      {
-        "type": "range",
-        "id": "input_corner_radius",
-        "min": 0,
-        "max": 10,
-        "step": 1,
-        "unit": "px",
-        "label": "t:labels.input_corner_radius",
-        "default": 4
-      }
-    ]
-  }
+  "name": "t:general.colors",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Brand colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "default": "#F7F8F5",
+      "label": "Background"
+    },
+    {
+      "type": "color",
+      "id": "surface_color",
+      "default": "#FFFFFF",
+      "label": "Surface"
+    },
+    {
+      "type": "color",
+      "id": "foreground_color",
+      "default": "#17332D",
+      "label": "Text"
+    },
+    {
+      "type": "color",
+      "id": "muted_color",
+      "default": "#65726E",
+      "label": "Muted text"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "default": "#1F6D5D",
+      "label": "Accent"
+    },
+    {
+      "type": "color",
+      "id": "accent_hover_color",
+      "default": "#185649",
+      "label": "Accent hover"
+    },
+    {
+      "type": "color",
+      "id": "accent_soft_color",
+      "default": "#E7F0EC",
+      "label": "Accent background"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "default": "#DCE5E1",
+      "label": "Borders"
+    },
+    {
+      "type": "header",
+      "content": "Corners"
+    },
+    {
+      "type": "range",
+      "id": "input_corner_radius",
+      "min": 0,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "label": "Input corner radius",
+      "default": 6
+    },
+    {
+      "type": "range",
+      "id": "button_corner_radius",
+      "min": 0,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Button corner radius",
+      "default": 6
+    },
+    {
+      "type": "range",
+      "id": "card_corner_radius",
+      "min": 0,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "label": "Card corner radius",
+      "default": 12
+    }
+  ]
+}
 ]

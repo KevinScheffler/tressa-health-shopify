@@ -11,6 +11,86 @@ body {
   flex-direction: column;
   margin: 0;
   min-height: 100svh;
+  font-family: var(--font-primary--family);
+  font-style: var(--font-primary--style);
+  font-weight: var(--font-primary--weight);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: clamp(var(--text-4xl), 6vw, var(--text-5xl));
+}
+
+h2 {
+  font-size: clamp(var(--text-3xl), 4vw, var(--text-4xl));
+}
+
+h3 {
+  font-size: var(--text-2xl);
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.15em;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid transparent;
+  border-radius: var(--style-border-radius-buttons);
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color 150ms ease,
+    border-color 150ms ease,
+    color 150ms ease;
+}
+
+.button--primary {
+  background-color: var(--color-accent);
+  color: #ffffff;
+}
+
+.button--primary:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.button--secondary {
+  border-color: var(--color-border);
+  background-color: transparent;
+  color: var(--color-foreground);
+}
+
+.button--secondary:hover {
+  background-color: var(--color-accent-soft);
 }
 
 html:has(dialog[scroll-lock][open], details[scroll-lock][open]) {
@@ -97,7 +177,8 @@ body {
     calc(100% - var(--page-margin) * 2)
   );
   --content-margin: minmax(var(--page-margin), 1fr);
-  --content-grid: var(--content-margin) var(--content-width) var(--content-margin);
+  --content-grid: var(--content-margin) var(--content-width)
+    var(--content-margin);
 
   /* This is required to make <img> elements work as background images */
   position: relative;
